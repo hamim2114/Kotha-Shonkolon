@@ -12,7 +12,7 @@ const BottomBar = () => {
         // width: '100%',
         maxWidth: '452px',
         mx: 'auto',
-        position: 'absolute',
+        position: 'fixed',
         bottom: 0,
         left: 0,
         right: 0,
