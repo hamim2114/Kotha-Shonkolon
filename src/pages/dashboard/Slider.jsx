@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -22,28 +23,33 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <Carousel
-      className='mb-10'
-      swipeable={true}
-      draggable={true}
-      showDots={false}
-      responsive={responsive}
-      infinite={true}
-      autoPlaySpeed={3000}
-      autoPlay={true}
-      keyBoardControl={true}
-      transitionDuration={500}
-      removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-      dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
-    >
+    <Box sx={{ overflow: 'hidden', borderRadius: '8px', height: '100%' }}>
 
-      <img src="https://img.freepik.com/free-vector/gradient-horizontal-banner-template-cyber-monday-sale_23-2150815104.jpg" alt="Graph" style={{ width: '100%', height: '100%', borderRadius: '8px', objectFit: 'cover' }} />
+      <Carousel
+        className='mb-10'
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        responsive={responsive}
+        infinite={true}
+        autoPlaySpeed={3000}
+        autoPlay={true}
+        keyBoardControl={true}
+        transitionDuration={500}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+
+        <img src="https://img.freepik.com/free-vector/gradient-horizontal-banner-template-cyber-monday-sale_23-2150815104.jpg" alt="Graph" style={{ width: '100%', height: '100%', borderRadius: '8px', objectFit: 'cover' }} />
 
 
-      <img src="https://flashbannerads.wordpress.com/wp-content/uploads/2013/06/1-2.png" alt="Graph" style={{ width: '100%', height: '100%', borderRadius: '8px', objectFit: 'cover' }} />
 
-    </Carousel>
+        <img src="https://flashbannerads.wordpress.com/wp-content/uploads/2013/06/1-2.png" alt="Graph" style={{ width: '100%', height: '100%', borderRadius: '8px', objectFit: 'cover' }} />
+
+
+      </Carousel>
+    </Box>
   )
 }
 

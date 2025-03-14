@@ -2,3 +2,9 @@
   max-width: 500px;
   margin: auto;
 } */
+
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
